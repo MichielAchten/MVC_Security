@@ -9,6 +9,7 @@ using System.Web.Mvc;
 
 namespace MVC_Security.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class UserController : Controller
     {
         // GET: User
